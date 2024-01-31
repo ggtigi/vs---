@@ -1,0 +1,140 @@
+/* html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: #ffa8b9;
+    color: white;
+    font-family: sans-serif;
+}
+.light-pink {
+    margin: 30px;
+  }
+  .pink {
+    background: #c66376;
+    padding: 10px 0;
+  }
+  .number {
+    padding: 10px;
+  }
+  .dark-dark-pink {
+    background: #9e354a;
+    padding: 10px 20px;
+  } */
+
+
+
+  /* html, body {
+    height: 100%;
+    width: 100%;
+    background: whitesmoke;
+    font-family: sans-serif;
+    margin: 0;
+  
+  }
+  .fon {
+  margin: 0 20px 0 20px;
+  }
+  .new {
+    display: block;
+    user-select: none;
+    position: relative;
+  }
+  .nch {
+    background: #97c3d3;
+  }
+  .ch {
+    background: lightblue;
+  }
+  
+  .checkbox-input {
+  -webkit-appearance: none;
+    position: absolute;
+  }
+  .checkbox-label {
+    display: block;
+    padding: 17px 20px; 
+  }
+  span {
+    color: #8b0015;
+    font-size: 13px;
+    position: absolute;
+    margin: 0;
+    top: 35%;
+  }
+  .lft-1 {
+    left: 154px;
+  }
+  .lft-2 {
+    left: 124px;
+  }
+  .lft-3 {
+    left: 148px;
+  }
+  .lft-4 {
+    left: 140px;
+  }
+  .lft-5 {
+    left: 165px;
+  }
+  .lft-6 {
+    left: 181px;
+  }
+  .lft-7 {
+    left: 147px;
+  }
+  .lft-8 {
+    left: 152px;
+  }
+  .lft-9 {
+    left: 167px;
+  }
+  .lft-10 {
+    left: 163px;
+  }
+  .lft-11 {
+    left: 167px;
+  }
+  .lft-12 {
+    left: 141px;
+  }
+  .checkbox-label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(img/unchecked_16.png);
+    margin-right: 17px;
+  }
+  .checkbox-input:checked + .checkbox-label:before {
+    background-image: url(img/checked_16.png)
+  }
+  .checkbox-input:checked + .checkbox-label {
+  text-decoration: line-through;
+  background: #e2e2e2;
+  } */
+
+
+
+
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  .name {
+    font-weight: bold;
+  }
+  dl {
+    margin: 30px 20px;
+  }
+  dt {
+    margin-top: 20px;
+  }
+  span {
+    color: #ababab;
+  }
+  .synonyms {
+    color: blue;
+  }
+  
