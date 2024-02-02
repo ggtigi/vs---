@@ -1,0 +1,83 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+footer {
+    background: #2a4f6e;
+    padding-top: 10px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.a-f {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.a-f:hover {
+    text-decoration: underline;
+}
+
+.Facebook {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/fb_gray.png);
+    background-size: contain;
+    margin: 5px;
+}
+
+.Facebook:hover {
+    background-image: url(img/fb.png);
+    background-size: contain;
+}
+
+.Instagram {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/insta_gray.png);
+    background-size: contain;
+    margin: 5px;
+}
+
+.Instagram:hover {
+    background-image: url(img/insta.png);
+    background-size: contain;
+}
+
+.Youtube {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/youtube_gray.png);
+    background-size: contain;
+    margin: 5px;
+}
+
+.Youtube:hover {
+    background-image: url(img/youtube.png);
+    background-size: contain;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+nav {
+    padding: 20px;
+}
