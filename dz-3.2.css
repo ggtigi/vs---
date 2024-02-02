@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background: lightcyan;
+  }
+  ol {
+    list-style-type: none;
+  }
+  
+  li{
+   width: 150px;  
+  }
+  
+  p{
+    text-transform: uppercase;
+    font-family: Gill Sans, sans-serif;
+  }
+  
+  .edit{
+    padding: 10px 0 10px 60px;
+    background: url("pics/edit.png") left/contain no-repeat;
+    background-color: rgba( 85, 85, 85, .5); 
+  }
+  .edit::hover{
+    background-color: rgba( 85, 85, 85, .6); 
+  }
+  .favorites{
+    padding: 10px 0 10px 60px;
+    background: url("pics/favorites.png") left/contain no-repeat;
+    background-color: rgba( 85, 85, 85, .5);
+  }
+  .favorites::hover{
+    background-color: rgba( 85, 85, 85, .6); 
+  }
+  .history{
+    padding: 10px 0 10px 60px;
+    background: url("pics/history.png") left/contain no-repeat;
+    background-color: rgba( 85, 85, 85, .5);
+  }
+  .history::hover{
+    background-color: rgba( 85, 85, 85, .6); 
+  }
+  .security{
+    padding: 10px 0 10px 60px;
+    background: url("pics/security.png") left/contain no-repeat;
+    background-color: rgba( 85, 85, 85, .5);
+  }
+  .security::hover{
+    background-color: rgba( 85, 85, 85, .6); 
+  }
+  .settings{
+    padding: 10px 0 10px 60px;
+    background: url("pics/settings.png") left/contain no-repeat;
+    background-color: rgba( 85, 85, 85, .5);
+  }
+  .settings::hover{
+    background-color: rgba( 85, 85, 85, .6); 
+  }
