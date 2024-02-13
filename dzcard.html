@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    color: #bfa1a1;
+  }
+  .form, form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  input, select, option, textarea {
+    border: none;
+    outline: none;
+  }
+  hr {
+    width: 100%;
+    background-color: gray;
+  }
+  body {
+    background-image:url(https://kartinkin.net/uploads/posts/2021-07/1625860188_30-kartinkin-com-p-basketbolnaya-ploshchadka-oboi-krasivie-30.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .form {
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 2px;
+    padding: 40px;
+    max-width: 520px;
+    min-width: 480px;
+    box-shadow: 0 0 20px black;
+  }
+  
+  label {
+    display: flex;
+        align-items: center;
+  }
+  input {
+    display: block;
+    width: auto;
+  }
+  input {
+    flex: 1 1 auto;
+    margin: 0 5px;
+    height: 27px;
+  }
+  #phone-1, #phone-2, #phone-3 {
+    width: 120px;
+  }
+  label {
+    margin: 10px 0;
+  }
+  select {
+     margin: 0 5px;
+    height: 27px;
+  }
+  h3 {
+    margin-top: 0;
+  }
+  #message {
+    height: 81px;
+  }
+  .message {
+     align-items: flex-start;
+    vertical-align: top;
+  }
+  .submit:hover {
+    background-color: #d4d4d4;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <h3>Контактная форма</h3>
+        <p>Заполните форму, плиз(мне для начальства надо):</p>
+
+        <form action="#" method="post">
+
+            <label class="label">
+                <span>Имя:</span>
+                <input type="text" id="fst-name" name="first-name" placeholder="Имя">
+                <input type="text" id="lst-name" name="last-name" placeholder="Фамилия">
+            </label>
+
+            <label for="" class="label">
+                <span>Почта:</span>
+                <input type="email" id="email" name="User-email" placeholder="Эл. почта">
+            </label>
+
+            <label for="" class="label">
+                <span>Номер(а)*:</span>
+                <input type="tel" id="phone-1" name="User-phone-1" placeholder="Телефон 1*" required>
+                <input type="tel" id="phone-2" name="User-phone-2" placeholder="Телефон 2">
+                <input type="tel" id="phone-3" name="User-phone-3" placeholder="Телефон 3">
+            </label>
+
+            <label for="" class="label">
+                <span>Тема сообщения*:</span>
+                <select name="Message subject" id="list" required>
+                    <option>Другое</option>
+                    <option>По работе</option>
+                    <option>Файлы</option>
+                    <option>Личная информация</option>
+                    <option>Рассылка</option>
+                </select>
+            </label>
+            <label for="" class="message">
+                <span>Сообщение*:</span>
+                <textarea name="message" id="message" cols="55" rows="10" required></textarea>
+            </label>
+            <hr>
+
+            <input type="submit" class="submit" value="Отправить форму">
+
+        </form>
+    </div>
+</body>
+
+</html>
