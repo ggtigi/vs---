@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>d</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+			background: lightgray;
+			text-transform: uppercase;
+			margin: 10px 0;
+  color: white;
+		}
+		header {
+      
+			background: #923158;
+      padding: 20px 30px;
+		}
+		nav, footer {
+			background: #6e1237;
+      padding: 10px 30px;
+		}
+		aside, main {
+			background: #b65b80;
+      padding: 20px 30px;
+		}
+		section {
+			background: #db92af;
+		}
+		.vText {
+			writing-mode: vertical-rl;
+			text-orientation: upright;
+      
+		}
+		header, nav, footer, aside, main, section {
+		margin: 10px;
+		}
+nav {
+  margin-bottom: 0;
+}
+footer {
+  margin-top: 0;
+}
+section {
+  padding: 5px 0px 50px 30px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  align-items: flex-start;
+}
+
+.aside-contein{
+  flex: 3;
+}
+.aside-1 {
+  margin-right: 0;
+}
+.aside-2 {
+  margin-right: 0;
+  padding-bottom: 50px;
+}
+main {
+  flex: 6;
+  margin-right: 0;
+}
+.aside-3 {
+flex: 1;
+ display: flex;
+ align-items: center;
+   padding: 10px;
+}
+  </style>
+</head>
+
+<body>
+<header>
+		Header
+	</header>
+	<nav>
+		Menu
+	</nav>
+	<div class="flex">
+		<div class='aside-contein'>
+			<aside class='aside-1'>
+				Aside1
+			</aside>	
+			<aside class='aside-2'>
+				Aside2
+			</aside>
+		</div>
+		<main>
+			Main content
+			<section>
+				Section1
+			</section>
+			<section>
+				Section2
+			</section>
+		</main>
+    <aside class="vText aside-3">Aside  3
+	</aside>
+	</div>
+  
+  <footer>Footer</footer>
+</body>
+
+</html>

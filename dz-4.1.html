@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>it</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    html, body {
+  height: 100vp;
+  width: 100vp;
+  margin: 0;
+}
+.krug {
+  border: 2px solid darkcyan;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  
+}
+.ceredina {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 2px;
+  height: 2px;
+  margin-top: 50%;
+  background-color: green;
+  border: 2px solid darkcyan;
+  background: darkcyan;
+   text-align: center;
+}
+.secundi {
+display: inline-block;
+  width: 1px;
+  height: 90px;
+  border: 1px solid darkcyan;
+  background: darkcyan;
+  transform-origin: 50% 100% 0;
+  transform: translate(0px, -94px) rotate(0deg);
+  animation: secundi 60s linear infinite;
+}
+.minuties {
+ display: inline-block;
+  width: 1px;
+  height: 60px;
+  border: 1px solid darkcyan;
+  background: darkcyan;
+  transform-origin: 50% 100% 0;
+  transform: translate(7px, -98px) rotate(0deg);;
+  animation: minuties 3600s linear infinite;
+}
+.hours {
+  display: inline-block;
+  width: 1px;
+  height:45px;
+  border: 1px solid darkcyan;
+  background: darkcyan;
+  transform-origin: 50% 100% 0;
+  transform: translate(-7px, -96px) rotate(0deg);
+  
+  animation: hours 43200s linear infinite;
+}
+@keyframes secundi {
+  
+  100% { transform: translate(0px, -97px) rotate(360deg);
+      }
+}
+@keyframes minuties { 
+  100% {
+    transform: translate(-7px, -98px) rotate(360deg);}
+}
+@keyframes hours {
+
+  100% { 
+    transform: translate(-7px, -96px)  rotate(360deg);}
+}
+  </style>
+  </head>
+
+<body>
+
+<div class="krug">
+  <div class="ceredina"></div>
+  <div class="minuties"></div>
+  <div class="secundi"></div>
+  <div class="hours"></div>
+  
+
+</div>
+
+</body>
+
+</html>

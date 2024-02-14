@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background: #1E405B;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-weight: lighter;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.logo .heart {
+  opacity: 1;
+  display: inline-block;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  padding-bottom: 10px;
+  left: auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.button.heart {
+  opacity: 1;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 40px;
+  left: auto;
+  padding-bottom: 10px;
+  margin: auto;
+}
+.button.heart:active:before, .button.heart:active:after {
+  transition: 0.3s linear background;
+  background: #E73131;
+}
+
+.image-box {
+  background: url(https://s21.postimg.org/ibm7wbbvr/photo_1427348693976_99e4aca06bb9.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 5px 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px 0px 10px rgba(0, 0, 0, 0.2);
+  height: 500px;
+  position: relative;
+}
+
+.box-wrapper {
+  width: 100px;
+  bottom: 20px;
+  right: 0;
+  position: absolute;
+}
+
+.heart-box {
+  position: relative;
+  height: 200px;
+  width: 100px;
+  margin: auto;
+  bottom: -60px;
+  right: 0;
+}
+
+.heart {
+  opacity: 0;
+  position: absolute;
+  left: 10%;
+  width: 50px;
+  height: 40px;
+  display: none;
+  transition: 1.5s ease-in-out opacity;
+}
+.heart:before, .heart:after {
+  position: absolute;
+  content: "";
+  left: 25px;
+  top: 0;
+  width: 25px;
+  height: 40px;
+  background: #ff4040;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.heart.one:before, .heart.one:after {
+  background: orchid;
+}
+.heart.two:before, .heart.two:after {
+  background: tomato;
+}
+.heart.three:before, .heart.three:after {
+  background: limegreen;
+}
+.heart.four:before, .heart.four:after {
+  background: gold;
+}
+.heart.five:before, .heart.five:after {
+  background: skyblue;
+}
+.heart.six:before, .heart.six:after {
+  background: orangered;
+}
+.heart.seven:before, .heart.seven:after {
+  background: coral;
+}
+.heart.eight:before, .heart.eight:after {
+  background: ForestGreen;
+}
+.heart.nine:before, .heart.nine:after {
+  background: magenta;
+}
+.heart.ten:before, .heart.ten:after {
+  background: deeppink;
+}
+
+@-webkit-keyframes heartUp {
+  0% {
+    bottom: 0;
+    transform: scale(0);
+    opacity: 0;
+  }
+  1% {
+    bottom: 10%;
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+    left: 5%;
+  }
+  40% {
+    opacity: 1;
+    left: 15%;
+  }
+  60% {
+    opacity: 1;
+    right: 5%;
+  }
+  100% {
+    bottom: 110%;
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes heartUp {
+  0% {
+    bottom: 0;
+    transform: scale(0);
+    opacity: 0;
+  }
+  1% {
+    bottom: 10%;
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+    left: 5%;
+  }
+  40% {
+    opacity: 1;
+    left: 15%;
+  }
+  60% {
+    opacity: 1;
+    right: 5%;
+  }
+  100% {
+    bottom: 110%;
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+.fly-one {
+  -webkit-animation: heartUp 4s infinite ease-in-out;
+          animation: heartUp 4s infinite ease-in-out;
+}
+
+.fly-two {
+  -webkit-animation: heartUp 5s infinite ease-in-out;
+          animation: heartUp 5s infinite ease-in-out;
+}
+
+.fly-three {
+  -webkit-animation: heartUp 6s infinite ease-in-out;
+          animation: heartUp 6s infinite ease-in-out;
+}
+
+.active {
+  display: block;
+}
+.v {
+  font-size: 30px;
+  color: #ff4040;
+  background-repeat: no-repeat;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper"> 
+        <h1 class="logo">   
+            <span class="heart"></span> моё сердечко
+        </h1>
+        <h4>Валентинка для тебя</h4>
+        
+        
+           <p class="v"> я люблю тебя и буду я всегда любить <br>
+            я ценю тебя и буду я всегда тебя ценить <br>
+            ты любовь моя та долгожданная <br>
+            ты валентинка моя самая угрюмая <br>
+            и пусть не знаю я той реакции твоей <br>
+            но всё же интересна мне реакция твоя <br>
+            я готов любить тебя <br>
+            и готов любить твой голос <br> 
+            я готов скучать по тебе <br>
+            и вспоминать тебя <br>
+            ты мой разум и мой друг <br> 
+            ты подруга и мой спуснит <br>
+            что с луною не сровнить <br>
+            будь любмой и люби <br>
+            остальное мне не важно <br>
+            цени, цвети и хорони <br>
+          <div class="box-wrapper">
+            <div class="heart-box">
+              <span class="heart four" data-heart="one"></span>
+              <span class="heart one" data-heart="two"></span>
+              <span class="heart three" data-heart="three"></span>
+              <span class="heart two" data-heart="two"></span>
+              <span class="heart five" data-heart="one"></span>
+              <span class="heart six" data-heart="two"></span>
+              <span class="heart eight" data-heart="two"></span>
+              <span class="heart seven" data-heart="three"></span>
+              <span class="heart ten" data-heart="one"></span>
+              <span class="heart nine" data-heart="one"></span>
+            </div>
+            <a class="button heart"></a>    
+          </div>
+        </p>
+      </div>
+</body>
+</html>
