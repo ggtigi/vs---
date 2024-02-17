@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: lightgoldenrodyellow;
+}
+.name {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.one, .four {
+   display: inline-block;
+  width: 64px;
+  height: 64px;
+}
+.two, .three {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+}
+.one {
+   background-image: url(./img/calc.png);
+  background-position: center;
+  background-size: 64px;
+  transform: translate(128px, 120vh) rotate(-30deg);
+  animation: one 2s ease 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.two {
+   background-image: url(./img/book.png);
+  background-position: center;
+  background-size: 128px;
+  transform: translate(30px, 120vh) rotate(-15deg);
+  animation: two 2s ease 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.three {
+  background-image: url(./img/paper.png);
+  background-position: center;
+  background-size: 128px;
+  transform: translate(-30px, 120vh) rotate(15deg);
+  animation: three 2s ease 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+.four {
+  background-image: url(img/pallete.png);
+  background-position: center;
+  background-size: 64px;
+  transform: translate(-128px, 120vh) rotate(210deg);
+  animation: four 2s ease 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.five {
+  width: 64px;
+  height: 64px;
+  background-image: url(./img/pencil.png);
+  background-position: center;
+  background-size: 64px;
+  margin: 0 auto;
+  transform: translate(0, 120vh) rotate(0.25turn);
+   animation: five 2s ease 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes one{
+  100% {
+    transform: translate(0, 0) rotate(-30deg);
+  }
+}
+@keyframes two{
+  100% {
+    transform: translate(0, 0) rotate(-15deg);
+  }
+}
+@keyframes three{
+  100% {
+    transform: translate(0, 0) rotate(15deg);
+  }
+}
+@keyframes four{
+  100% {
+    transform: translate(0, 0) rotate(210deg);
+  }
+}
+@keyframes five{
+  100% {
+    transform: translate(0, 0) rotate(0.25turn);
+  }
+}
+    </style>
+</head>
+<body>
+    <h1 class="name">Hello, it's my site!</h1>
+<div class="cont">
+   <div class="one"></div>
+   <div class="two"></div>
+   <div class="three"></div>
+   <div class="four"></div>
+</div>
+   <div class="five"></div>
+</body>
+</html>

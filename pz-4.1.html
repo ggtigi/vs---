@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+  height: 100%;
+  width: 100%;
+}
+.con {
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  border: 3px solid darkorange;
+}
+.kva {
+  margin: 0;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: darkorange;
+  animation: myanim 2s linear infinite;
+}
+@keyframes myanim {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 150px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="kva"></div>
+      </div>
+</body>
+</html>

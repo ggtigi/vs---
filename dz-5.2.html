@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+img {
+  width: 80px;
+}
+p {
+  display: inline-block;
+  overflow: hidden;
+  width: 0;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: width 1s;
+}
+header {
+  display: inline-block;
+  position: sticky;
+  height: 100%;
+  background: #8a8a8a;
+}
+h3 {
+  padding-left: 13px;
+  color: white;
+  font-weight: 400;
+}
+li:hover {
+  background: #696969;
+}
+header:hover p{
+  width: 150px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Menu</h3>
+        <nav>
+                <ul>
+                    <li><a href=""><img src="img/загруженное (2).png" alt=""></a>
+                        <a href=""><p class="hidd">Edit</p></a>
+                    </li>
+                    <li><a href=""><img src="/img/favorites.png" alt=""></a>
+                        <a href=""><p class="hidd">Favorites</p></a>
+                    </li>
+                    <li><a href=""><img src="img/загруженное (16).png" alt=""></a>
+                        <a href=""><p class="hidd">History</p></a>
+                    </li>
+                    <li><a href=""><img src="img/загруженное (22).png" alt=""></a>
+                        <a href=""><p class="hidd">Security</p></a>
+                    </li>
+                    <li><a href=""><img src="img/загруженное (23).png" alt=""></a>
+                        <a href=""><p class="hidd">Settings</p></a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+</body>
+</html>

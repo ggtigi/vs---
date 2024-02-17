@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  margin: 40px;
+}
+.form {
+  width: 272px;
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  transition: transform 0.2s linear;
+}
+p, h4{
+  position: relative;
+  z-index:13;
+}
+.cost {
+  font-weight: 600;
+  font-size: 30px;
+  display: block;
+}
+.gray-text {
+  display: inline-block;
+  color: lightgray;
+  padding: 10px;
+  font-weight: 550;
+}
+.text {
+  display: block;
+  font-weight: 550;
+  margin: 10px;
+}
+.head {
+  font-weight: 700;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+}
+/* .head-1 {
+  border-bottom: 3px solid #c73756; */
+
+h4, .button {
+  text-transform: uppercase;
+}
+.button {
+  text-decoration: none;
+  color: white;
+  background: #c73756;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 15px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.button:hover {
+  background: #972b42;
+}
+
+
+.button-2 {
+   background: #d7913b;
+}
+.button-2:hover {
+   background: #ab722b;
+}
+
+
+
+.button-3 {
+   background: #2b6689;
+}
+.button-3:hover {
+   background: #215069;
+}
+
+.button-4 {
+   background: #63bb34;
+}
+.button-4:hover {
+   background: #4f922a;
+}
+.all-the-text {
+  margin: 0;
+  padding: 25px;
+}
+
+.form:after{
+  content:"";
+  display:block;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  transition:0.35s;
+  background: white;
+  z-index: 10;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 2px gray;
+}
+.form:hover:after {
+  top: -32px;
+  left: -13px;
+  bottom: -32px;
+  right: -13px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 2px gray;
+  z-index: 11;
+}
+.ppp {
+  height:3px;
+  width: 272px;
+  background: #c73756;
+  position: absolute;
+  z-index:14;
+  transition: 0.35s;
+}
+.form:hover .ppp {
+  padding-left: 13px;
+  padding-right: 13px;
+  transform: translate(-13px, 0);
+}
+.col-2 {
+   background: #d7913b;
+}
+.col-3 {
+   background: #2b6689;
+}
+.col-4 {
+   background: #63bb34;
+}
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="form form-1">
+            <h4 class="head head-1">Enterprise</h4>
+            <div class="ppp"></div>
+            <p class="all-the-text">
+              <span class="cost">$69</span>
+              <span class="gray-text">per month</span>
+              <span class="text">10GB disk space</span>
+              <span class="text">100GB monthly bandwidth</span>
+              <span class="text">20 email accounts</span>
+              <span class="text">Unimited subdomens</span>
+              <a class="button" href="#">Buy</a>
+            </p>
+        </div>
+        <div class="form form-2">
+            <h4 class="head head-2">Professional</h4>
+            <div class="ppp col-2"></div>
+            <p class="all-the-text">
+              <span class="cost">$29</span>
+              <span class="gray-text">per month</span>
+              <span class="text">5GB disk space</span>
+              <span class="text">60GB monthly bandwidth</span>
+              <span class="text">10 email accounts</span>
+              <span class="text">Unimited subdomens</span>
+              <a class="button button-2" href="#">Buy</a>
+            </p>
+        </div>
+        <div class="form form-3">
+            <h4 class="head head-3">Standard</h4>
+            <div class="ppp col-3"></div>
+            <p class="all-the-text">
+              <span class="cost">$19</span>
+              <span class="gray-text">per month</span>
+              <span class="text">3GB disk space</span>
+              <span class="text">30GB monthly bandwidth</span>
+              <span class="text">5 email accounts</span>
+              <span class="text">Unimited subdomens</span>
+              <a class="button button-3" href="#">Buy</a>
+            </p>
+        </div>
+        <div class="form form-4">
+            <h4 class="head head-4">Basic</h4>
+            <div class="ppp col-4"></div>
+            <p class="all-the-text">
+              <span class="cost">$9</span>
+              <span class="gray-text">per month</span>
+              <span class="text">1GB disk space</span>
+              <span class="text">10GB monthly bandwidth</span>
+              <span class="text">2 email accounts</span>
+              <span class="text">Unimited subdomens</span>
+              <a class="button button-4" href="#">Buy</a>
+            </p>
+        </div>
+      </div>
+</body>
+</html>

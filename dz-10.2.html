@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background-color: whitesmoke;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#gra, #kre, #gal {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#gra:focus-visible, #kre:focus-visible, #gal:focus-visible {
+  outline: none;
+}
+#gra {
+  border: 2px solid #c7c7c7;
+}
+#kre {
+   border: 2px solid #29af0e;
+}
+ #gal {
+   border: 2px solid #d30d0d;
+ }
+#gra::placeholder {
+  color: #d6d6d6;
+}
+#kre::placeholder {
+  color: #34bb2a;
+}
+#gal::placeholder {
+  color: #c4200e;
+}
+#gra:focus-visible {
+  border: 2px solid #999999;
+}
+#kre:focus-visible {
+  border: 2px solid #1e7213;
+}
+#gal:focus-visible {
+  border: 2px solid #8a0505;
+}
+#kre {
+  background-image: url(img/valid.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 180px;
+}
+#gal {
+  background-image: url(img/invalid.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 180px;
+}
+
+.notActive {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.notActive+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.notActive+label::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #d30d0d;
+  border-right: 17px solid #d30d0d;
+  border-radius: 0.25em;
+  margin: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-color: #f5f5f5;
+}
+
+.notActive:checked+label::before {
+  border: 2px solid #29af0e;
+  border-left: 17px solid #29af0e;;
+}
+
+ .radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+.radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+.radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #d30d0d;
+    border-radius: 50%;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    background-color: #f5f5f5;
+  }
+
+.radio:checked+label::before {
+    border-color: #29af0e;
+}
+.all {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.circle {
+  border: none;
+  border-radius: 50%;
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+textarea {
+  width: 400px;
+  height: 150px;
+}
+.Active {
+  background: #41ad49;
+}
+.Hover {
+  background: #41ad49;
+}
+.Hover:hover {
+  background: #2c7731;
+}
+.Danger {
+  background: #e44061;
+}
+.Hover-2 {
+  background: #e44061;
+}
+.Hover-2:hover {
+  background: #97293f;
+}
+.Disabled {
+  background: grey;
+}
+.Plus {
+  background: #41ad49;
+}
+.Minus {
+  background: #e44061;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Inputs</h3>
+        <input type="text" id="gra" placeholder="Enter some text">
+        <input type="text" id="kre" placeholder="valid text">
+        <input type="text" id="gal" placeholder="invalid text">
+        
+        <h3>Check boxes</h3>
+        <input class='notActive' id="not" type="checkbox">
+        <label for="not">not active</label>
+        
+        <input class='notActive' id="act" type="checkbox" checked>
+        <label for="act">active</label>
+        
+        <h3>Radio buttons</h3>
+      <input class='radio' id='radioNotActive' type="radio" name="rad">
+      <label for="radioNotActive">not active</label>
+        
+      <input class='radio' id='radioActive' type="radio" checked name="rad">
+      <label for="radioActive">active</label>
+        
+        <h3>Buttons</h3>
+      <button class="all Active">Active</button>
+      <button class="all Hover">Hover</button>
+      <button class="all Danger">Danger</button>
+      <button class="all Hover-2">Hover</button>
+      <button class="all Disabled">Disabled</button>
+      <button class="circle Plus">+</button>
+      <button class="circle Minus">-</button>
+        
+        <h3>Text area</h3>
+        <textarea id="message" name="userMessage"></textarea>
+      </div>
+      
+</body>
+</html>
