@@ -7,29 +7,28 @@
     <title>Document</title>
     <style>
         body {
-    
+
             text-align: center;
-           
 
 
 
 
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+            font-family: Times, Times New Roman, serif;
             font-weight: bold;
             padding: 0;
             margin: 0;
             background-color: rgb(0, 0, 0);
             overflow-x: hidden;
             background: linear-gradient(127deg,
-                rgb(0, 0, 0) 0%,
-                rgb(25, 3, 65) 42%,
-                rgb(192, 22, 22) 72%,
-                rgb(255, 255, 255) 100%);
+                    rgb(0, 0, 0) 0%,
+                    rgb(25, 3, 65) 42%,
+                    rgb(27, 8, 44) 72%,
+                    rgb(131, 64, 255) 100%);
             animation: gradient 10s infinite linear;
             background-size: 400%;
-        
-            
+
+
         }
 
         @keyframes gradient {
@@ -53,7 +52,7 @@
         }
 
         a {
-            color: aquamarine;
+
             text-decoration: none;
         }
 
@@ -77,25 +76,62 @@
         .anim {
             font-size: 150px;
             text-align: center;
+            font-size: 70px;
+            margin-left: -85%;
 
 
         }
+
         p {
-            color: aqua;
+
             font-size: 40px;
-                margin-left: 35%;
-                width: 700px;
-                margin-top: 300px;
-         
+            margin-left: 35%;
+            width: 700px;
+            margin-top: 300px
+        }
+
+            .anim {
+                background: linear-gradient(to left,
+                        rgb(164, 255, 44) 20%,
+                        rgba(41, 255, 13, 0.4) 40%,
+                        rgba(164, 255, 78, 0.6) 60%,
+                        rgba(240, 255, 255, 0.4) 80%,
+                        rgb(6, 255, 40) 100%);
+                background-clip: text;
+                animation: shine 2s linear infinite;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 200% auto;
+                margin-left: -10%;
+
+                font-size: 300px;
+                opacity: 0.2;
+                text-transform: uppercase;
+            }
+
+        
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .abou3 {
+            transform: translate(565px, -100px);
+            width: max-content;
+            height: max-content;
+            margin-top: 250px;
+
+            margin-left: 200px
         }
     </style>
 </head>
 
 <body>
     <section id="about">
-        <div class="abb">
-            <h1><a class="anim" style="cursor: default;" href="https://vk.com/tigibro">Обо мне:</a>
-            </h1>
+        <div class="about3">
+            <a style="cursor: default;" href="https://github.com/ggtigi" class="anim">about me</a>
         </div>
 
         <p>Привет, меня зовут Тигран и я занимаюсь программированием, <br> мне 15 лет. <br>
